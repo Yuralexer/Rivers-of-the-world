@@ -1,0 +1,166 @@
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #F6FAFF;
+}
+
+.header 
+{
+    padding-left: 240px;
+    padding-right: 240px;
+    height: 100px;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    background-color: #33363F;
+    box-shadow: 0 1px 5px 0;
+}
+
+.header__logo 
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header__logo__img 
+{
+    width: 48px;
+    padding-right: 10px;
+}
+
+.header__logo__text__name 
+{
+    color: #fff;
+    font-family: 'europeextendedc_bold';
+    font-size: 20px;
+}
+
+.header__logo__text__subtitle
+{
+    color: #fff;
+    font-family: 'stolzl_light';
+    font-size: 14px;
+}
+
+.header__nav
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header__nav__main
+{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.header__nav__main__point
+{
+    font-family: 'stolzl_regular';
+    font-size: 18px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.header__nav__main__point:last-child
+{
+    margin-right: 0;
+}
+
+.header__nav__main__point > a 
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.button
+{
+    font-family: 'stolzl_bold';
+    font-size: 18px;
+    padding: 16px 52px;
+    border-radius: 10px;
+    background-color: #E6E6E6;
+    color: #33363F;
+    border: 0;
+}
+
+.primary-btn
+{
+    background-image: linear-gradient(90deg, #69BAFC, #5BA8E8);
+    color: #fff;
+}
+
+.footer
+{
+    padding-left: 240px;
+    padding-right: 240px;
+    height: 240px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #33363F;
+    box-shadow: 0 1px 5px 0;
+}
+
+.footer__logo-img
+{
+    height: 100px;
+}
+
+.footer__nav
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__nav__point
+{
+    font-family: 'stolzl_regular';
+    font-size: 18px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.footer__nav__point:last-child
+{
+    margin-right: 0;
+}
+
+.footer__nav__point > a 
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.footer__text
+{
+    font-family: 'stolzl_book';
+    font-size: 18px;
+    text-align: right;
+    color: #fff;
+}
+
+.footer__text__copyright > a
+{
+    text-decoration: none;
+    color: #adc5da;
+}

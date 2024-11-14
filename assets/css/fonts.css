@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'europeextendedc';
+    src: url(../fonts/europeextendedc.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'europeextendedc_bold';
+    src: url(../fonts/europeextendedc_bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'europeextendedc_bolditalic';
+    src: url(../fonts/europeextendedc_bolditalic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'europeextendedc_italic';
+    src: url(../fonts/europeextendedc_italic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'stolzl_bold';
+    src: url(../fonts/stolzl_bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'stolzl_book';
+    src: url(../fonts/stolzl_book.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'stolzl_light';
+    src: url(../fonts/stolzl_light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'stolzl_medium';
+    src: url(../fonts/stolzl_medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'stolzl_regular';
+    src: url(../fonts/stolzl_regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'stolzl_thin';
+    src: url(../fonts/stolzl_thin.ttf) format('truetype');
+}
