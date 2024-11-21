@@ -1,0 +1,250 @@
+.hero-section 
+{
+    z-index: 1;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background: linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0, 0.3)), url(../img/hs-bgimg.png) 0 0 no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#hs__river-icon
+{
+    z-index: 0;
+    width: 50%;
+    position: relative;
+    right: -55%;
+    top: -125%;
+    user-select: none;
+}
+
+.hero-section__content
+{
+    z-index: 1;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-section__content__h
+{
+    font-size: 98px;
+    background-image: linear-gradient(90deg, #CCE8FF, #FFFFFF, #CCE8FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.hero-section__content__p
+{
+    color: #FFFFFF;
+    font-family: 'stolzl_bold';
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.about-us
+{
+    background-color: #F6FAFF;
+}
+
+.about-us__content
+{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.about-us__content__h
+{
+    color: #33363F;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.about-us__content__paragraphs
+{
+    margin-bottom: 30px;
+}
+
+.about-us__content__paragraphs > p
+{
+    margin-bottom: 20px;
+}
+
+.about-us__content__paragraphs > p:last-child
+{
+    margin-bottom: 0;
+}
+
+.about-us__content__p
+{
+    font-family: 'stolzl_regular';
+    color: #33363F;
+    font-size: 18px;
+}
+
+.about-us__img
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: center;
+    height: 300px;
+
+}
+
+.about-us__img > img 
+{
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0, 0.5);
+}
+
+.targets
+{
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.targets__h
+{
+    font-size: 48px;
+    color: #33363F;
+    margin-bottom: 30px;
+}
+
+.targets__cards
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.targets__cards__card
+{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0,0,0, 0.3);
+    border-radius: 30px;
+    width: 400px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.targets__cards__card > img 
+{
+    width: 101px;
+    height: 101px;
+}
+.targets__cards__card > hr
+{
+    width: 60px;
+    border-color: #33363F;
+}
+
+.targets__cards__card > h4
+{
+    text-align: center;
+    font-family: 'stolzl_bold';
+    font-size: 24px;
+    color: #33363F;
+    width: 244px;
+}
+
+.targets__cards__card > p
+{
+    font-family: 'stolzl_medium';
+    font-size: 16px;
+    color: #33363F;
+    text-align: center;
+    width: 244px;
+}
+
+.list-of-rivers
+{
+    background-color: #33363F;
+    height: 400px;
+}
+
+.last-news
+{
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last-news__h
+{
+    font-size: 48px;
+    color: #33363F;
+    margin-bottom: 30px;
+}
+
+.last-news__cards
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.last-news__cards__card
+{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0,0,0, 0.3);
+    border-radius: 30px;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items:baseline;
+    margin-bottom: 30px;
+}
+
+.last-news__cards__card__context
+{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items:baseline;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.last-news__cards__card__context > h4
+{
+    font-family: 'stolzl_bold';
+    font-size: 26px;
+    color: #FFFFFF;
+}
+
+#first-new
+{
+    background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/moscow-river.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+#second-new
+{
+    background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/дон.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+#third-new
+{
+    background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/oka.png) 0 0 no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
