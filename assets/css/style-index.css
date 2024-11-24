@@ -341,9 +341,43 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.list-of-rivers__cards__card:hover {
+.list-of-rivers__cards__card:hover 
+{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     background-size: 110%;
+}
+
+.list-of-rivers__cards__card__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+#volga-bg {
+    background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/vr-kalyazin-01_big.jpg) 0 0 no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#moscow-bg {
+    background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/moscow-river-2.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+#ob-bg {
+    background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/ob-reka-nizhnevartovskij-rajon.jpg) 0 0 no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.list-of-rivers__cards__card:hover .list-of-rivers__cards__card__background {
+    transform: scale(1.1); /* Увеличение фона */
 }
 
 .list-of-rivers__cards__card__context {
@@ -379,25 +413,4 @@
 .list-of-rivers__cards__card:hover .list-of-rivers__cards__card__context__info {
     opacity: 1;
     max-height: 200px;
-}
-
-
-
-#moscow-river
-{
-    background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/moscow-river.png) 0 0 no-repeat;
-    background-size: cover;
-}
-
-#volga-river
-{
-    background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/дон.png) 0 0 no-repeat;
-    background-size: cover;
-}
-
-#ob-river
-{
-    background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/oka.png) 0 0 no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
 }
