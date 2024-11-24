@@ -169,12 +169,6 @@
     width: 244px;
 }
 
-.list-of-rivers
-{
-    background-color: #33363F;
-    height: 400px;
-}
-
 .last-news
 {
     margin: 60px 0;
@@ -212,23 +206,67 @@
     margin-bottom: 30px;
 }
 
-.last-news__cards__card__context
+.last-news__cards__card 
 {
-    padding: 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    width: 400px;
+    height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items:baseline;
-    gap: 20px;
-    overflow: hidden;
+    justify-content: flex-end; 
+    align-items: baseline;
+    margin-bottom: 30px;
+    overflow: hidden; 
+    position: relative;
 }
 
-.last-news__cards__card__context > h4
+.last-news__cards__card__context 
+{
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: baseline;
+    gap: 20px;
+    position: relative;
+    transition: transform 0.3s ease; 
+}
+
+.last-news__cards__card__context > h4 
 {
     font-family: 'stolzl_bold';
     font-size: 26px;
     color: #FFFFFF;
+    transform: translateY(0); 
+    transition: transform 0.3s ease; 
 }
+
+.last-news__cards__card__context > .primary-btn 
+{
+    opacity: 0; 
+    transform: translateY(30px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.last-news__cards__card:hover .last-news__cards__card__context 
+{
+    transform: translateY(-40px);
+}
+
+.last-news__cards__card:hover .last-news__cards__card__context > h4 
+{
+    transform: translateY(-20px);
+}
+
+.last-news__cards__card:hover .last-news__cards__card__context > .primary-btn 
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 
 #first-new
 {
@@ -243,6 +281,121 @@
 }
 
 #third-new
+{
+    background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/oka.png) 0 0 no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.list-of-rivers
+{
+    background-color: #33363F;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-of-rivers__h
+{
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.list-of-rivers__card
+{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0,0,0, 0.3);
+    border-radius: 30px;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items:baseline;
+    margin-bottom: 30px;
+}
+
+.list-of-rivers__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list-of-rivers__cards__card {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items:baseline;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-of-rivers__cards__card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-size: 110%;
+}
+
+.list-of-rivers__cards__card__context {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-of-rivers__cards__card__context h4 {
+    font-family: 'stolzl_bold';
+    font-size: 24px;
+    margin: 0;
+    color: #ffffff; 
+}
+
+.list-of-rivers__cards__card__context__info {
+    font-family: 'stolzl_regular';
+    font-size: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #dfdfdf;
+    opacity: 0; /* Изначально скрыт */
+    max-height: 0; /* Для плавного перехода */
+    overflow: hidden;
+    transition: opacity 0.6s ease, max-height 0.6s ease;
+}
+
+.list-of-rivers__cards__card:hover .list-of-rivers__cards__card__context__info {
+    opacity: 1;
+    max-height: 200px;
+}
+
+
+
+#moscow-river
+{
+    background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/moscow-river.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+#volga-river
+{
+    background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/дон.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+#ob-river
 {
     background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/oka.png) 0 0 no-repeat;
     background-size: cover;

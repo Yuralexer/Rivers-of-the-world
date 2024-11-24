@@ -98,6 +98,17 @@ body {
     border: 0;
     cursor: pointer;
     white-space: nowrap;
+    transition: background-color ease-out .2s;
+}
+
+.secondary-btn:hover
+{
+    background-color: #b6b6b6;
+}
+
+.secondary-btn:active
+{
+    background-color: #a0a0a0;
 }
 
 .primary-btn
