@@ -1,0 +1,221 @@
+@import url(style.css);
+
+.donate-section
+{
+    background-color: #33363F;
+    position: relative;
+    overflow: hidden;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.donate-section__bg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/scale_1200.png') center/cover no-repeat;
+    z-index: 0;
+    filter: brightness(0.5) blur(4px);
+}
+
+.donate-section__context
+{
+    flex: 1;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.donate-section__context__h
+{
+    font-size: 36px;
+    background-image: linear-gradient(90deg, #CCE8FF, #FFFFFF, #CCE8FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.donate-section__context__p
+{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'stolzl_medium';
+}
+
+.donate-section__form {
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #33363F;
+    padding: 20px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.donate-section__form__h
+{
+    text-align: center;
+    font-family: 'stolzl_bold';
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.donate-section__form label {
+    font-family: 'stolzl_medium';
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.donate-section__form input {
+    width: calc(100% - 30px);
+    margin: 5px 0 15px 0;
+    padding: 10px;
+    border: 2px solid #4b5c74;
+    border-radius: 10px;
+    background-color: #33363F;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'stolzl_regular';
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.donate-section__form input:focus {
+    outline: none;
+    border-color: #089cff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #3f424d;
+}
+
+.donate-section__form button {
+    display: block;
+    margin: auto;
+}
+
+.donate-section__form button:hover {
+    background-color: #0056b3;
+}
+
+.donate-section__form__text-area
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.donate-section__form__text-area textarea 
+{
+    width: calc(100% - 30px);
+    height: 150px;
+    margin: 5px 0 15px 0;
+    padding: 10px;
+    border: 2px solid #4b5c74;
+    border-radius: 10px;
+    background-color: #33363f;
+    font-size: 18px;
+    color: #fff;
+    resize: none;
+    font-family: 'stolzl_regular';
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.donate-section__form__text-area textarea:focus 
+{
+    outline: none;
+    border-color: #089cff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #3f424d;
+}
+
+.donation-why
+{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    color: #33363f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.donation-why__context
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.donation-why__h
+{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.donation-why__p
+{
+    font-family: 'stolzl_regular';
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.donation-why__ul
+{
+    font-family: 'stolzl_regular';
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.donation-why__ul > li
+{
+    list-style: none;
+}
+
+.donation-why__ul__li
+{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 150px;
+    width: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #b3ddff;
+    border-radius: 20px;
+    cursor: default;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+    transition: color ease 0.3s, background-color ease 0.3s, box-shadow ease 0.3s;
+}
+
+.donation-why__ul__li:hover
+{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    background-color: #33363f;
+    color: #fff;
+}
+
+.donation-why__img
+{
+    flex: 1;
+    width: 100%;
+    height: 512px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.donation-why__img > img
+{
+    height: 100%;
+}

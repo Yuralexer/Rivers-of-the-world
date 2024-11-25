@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Поддержите нас</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-donate.css">
     <link rel="shortcut icon" href="assets/img/logo-lighttheme.svg" type="image/x-icon">
     <meta name="description" content=""Реки Мира" — это некоммерческая организация, объединившая единомышленников, которые горят желанием защитить и улучшить состояние рек по всему миру.">
     <meta name="keywords" content="river world река реки мир мира некоммерческая организация состояние защита">
@@ -32,9 +32,65 @@
         </nav>
     </header>
 
-    <main class="content">
+    <main>
+             
+        <section class="donate-section content">
+            <div class="donate-section__bg"></div>
+            <div class="donate-section__context">
+                <h3 class="donate-section__context__h primary-text">Сделайте реки лучше с вашей помощью</h3>
+                <p class="donate-section__context__p">
+                    Ваше пожертвование поможет нам сохранять реки, защищать природу и бороться за экологическое будущее. 
+                    Каждая сумма, которую вы вносите, становится вкладом в сохранение планеты.
+                </p>
+            </div>
+
+            <form action="/donate" method="get" class="donate-section__form">
+                <h3 class="donate-section__form__h">Форма пожертовования</h3>
+                <label for="donation-amount">Сумма пожертвования (в рублях)</label>
+                <input type="number" id="donation-amount" name="amount" placeholder="Введите сумму в рублях" required>
         
-        <!-- Блок для содержимого страницы -->
+                <label for="sponsor-name">Ваше имя</label>
+                <input type="text" id="sponsor-name" name="name" placeholder="Иван">
+        
+                <label for="sponsor-email">Ваш email</label>
+                <input type="email" id="sponsor-email" name="email" placeholder="ivanov@email.com" required>
+        
+                <div class="donate-section__form__text-area">
+                    <label for="message">Сообщение (необязательно)</label>
+                    <textarea id="message" name="message" placeholder="Напишите пожелание или сообщение"></textarea>
+                </div>
+        
+                <button type="submit" class="donation-form__button primary-btn">Перейти к оплате</button>
+            </form>
+
+        </section>
+
+        <section class="donation-why content">
+            <div class="donation-why__context">
+                <h3 class="donation-why__h primary-text">Зачем делать пожертвования в пользу "Рек мира"?</h3>
+                <p class="donation-why__p">
+                    "Реки мира" — это сообщество, которое объединяет людей, готовых бороться за сохранение и защиту рек. Мы верим, 
+                    что каждая река — это источник жизни, культуры и вдохновения. 
+                </p>
+                <ul class="donation-why__ul">
+                    <li><div class="donation-why__ul__li">
+                        Ваши пожертвования помогают проводить исследования, которые сохраняют реки и их экосистемы.
+                    </div></li>
+                    <li><div class="donation-why__ul__li">
+                        Мы создаём программы для вовлечения молодёжи и населения в защиту водных ресурсов.
+                    </div></li>
+                    <li><div class="donation-why__ul__li">
+                        Вы поддерживаете очистку рек, предотвращение загрязнений и восстановление природы.
+                    </div></li>
+                </ul>
+                <p class="donation-why__p">
+                    Присоединяйтесь к нам в создании будущего, где реки остаются чистыми и полными жизни. Вместе мы сможем больше!
+                </p>
+            </div>
+            <div class="donation-why__img">
+                <img src="/assets/img/дон.png">
+            </div>
+        </section>
 
     </main>
 
