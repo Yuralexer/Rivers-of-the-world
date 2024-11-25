@@ -1,3 +1,5 @@
+@import url(style.css);
+
 .hero-section 
 {
     z-index: 1;
@@ -53,7 +55,7 @@
 
 .about-us__content
 {
-    margin-top: 60px;
+    margin-top: 120px;
     margin-bottom: 60px;
 }
 
@@ -105,7 +107,7 @@
 
 .targets
 {
-    margin: 60px 0;
+    margin: 60px 0 120px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,7 +203,7 @@
     height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: space-between;
     align-items:baseline;
     margin-bottom: 30px;
 }
@@ -290,8 +292,8 @@
 .list-of-rivers
 {
     background-color: #33363F;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -327,7 +329,8 @@
 
 .list-of-rivers__cards__card {
     background-color: #FFFFFF;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    border-bottom: 5px solid #f6faff;
     border-radius: 30px;
     position: relative;
     overflow: hidden;
@@ -413,4 +416,79 @@
 .list-of-rivers__cards__card:hover .list-of-rivers__cards__card__context__info {
     opacity: 1;
     max-height: 200px;
+}
+
+.subscription {
+    display: flex;
+    gap: 40px;
+    border-radius: 20px;
+    margin: 120px auto 120px auto;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.subscription__description {
+    flex: 1;
+    margin: 40px;
+}
+
+.subscription__description h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #33363F;
+}
+
+.subscription__description p {
+    font-family: 'stolzl_regular';
+    font-size: 18px;
+    color: #494d5a;
+    line-height: 1.5;
+}
+
+.subscription__form {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 20px;
+    background-color: #33363F;
+    padding: 20px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.subscription__form label {
+    font-family: 'stolzl_medium';
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.subscription__form input {
+    width: calc(100% - 30px);
+    margin: 5px 0 15px 0;
+    padding: 10px;
+    border: 2px solid #4b5c74;
+    border-radius: 10px;
+    background-color: #33363F;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'stolzl_regular';
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.subscription__form input:focus {
+    outline: none;
+    border-color: #089cff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #3f424d;
+}
+
+.subscription__form button {
+    display: block;
+    margin: auto;
+}
+
+.subscription__form button:hover {
+    background-color: #0056b3;
 }

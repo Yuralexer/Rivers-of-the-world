@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Реки мира</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-index.css">
     <link rel="shortcut icon" href="assets/img/logo-lighttheme.svg" type="image/x-icon">
     <meta name="description" content=""Реки Мира" — это некоммерческая организация, объединившая единомышленников, которые горят желанием защитить и улучшить состояние рек по всему миру.">
     <meta name="keywords" content="river world река реки мир мира некоммерческая организация состояние защита">
@@ -18,14 +18,14 @@
                 <h1 class="header__logo__text__name">Реки мира</h1>
                 <h3 class="header__logo__text__subtitle">С заботой к воде</h3>
             </div>
-        <a/>
+        </a>
 
         <nav class="header__nav">
             <ul class="header__nav__main">
                 <li class="header__nav__main__point"><a href="#" class="nav-link">Главная</a></li>
-                <li class="header__nav__main__point"><a href="#" class="nav-link">Реки</a></li>
-                <li class="header__nav__main__point"><a href="#" class="nav-link">Новости</a></li>
-                <li class="header__nav__main__point"><a href="#" class="nav-link">О нас</a></li>
+                <li class="header__nav__main__point"><a href="rivers.html" class="nav-link">Реки</a></li>
+                <li class="header__nav__main__point"><a href="news.html" class="nav-link">Новости</a></li>
+                <li class="header__nav__main__point"><a href="aboutUs.html" class="nav-link">О нас</a></li>
             </ul>
 
             <button class="header__nav__primary-button primary-btn">Поддержать нас</button>
@@ -131,6 +131,9 @@
             <h3 class="last-news__h primary-text">Последние новости</h3>
             <div class="last-news__cards">
                 <div class="last-news__cards__card" id="first-new">
+                    <div class="last-news__cards__card__date">
+                        04.11.2024
+                    </div>
                     <div class="last-news__cards__card__context">
                         <h4>Гендиректор «Рек мира» посетил Москву</h4>
                         <button class="primary-btn">Читать новость</button>
@@ -152,6 +155,24 @@
             <button class="primary-btn">Смотреть все новости</button>
         </div>
 
+        <div class="subscription">
+            <div class="subscription__description">
+                <h2 class="primary-text">Будьте в курсе новостей о наших реках!</h2>
+                <p>Подпишитесь на нашу рассылку и узнавайте первыми о новых проектах, акциях и актуальной информации об охране рек мира.</p>
+            </div>
+            <div class="subscription__form">
+                <form method="get">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" placeholder="Иван" required>
+        
+                    <label for="email">Электронная почта</label>
+                    <input type="email" id="email" name="email" placeholder="ivanov@email.com" required>
+        
+                    <button type="submit" class="primary-btn">Подписаться</button>
+                </form>
+            </div>
+        </div>        
+
     </main>
 
     <footer class="footer content">
@@ -160,10 +181,10 @@
 
             <nav class="footer__nav">
                 <li class="footer__nav__point"><a href="#" class="nav-link">Главная</a></li>
-                <li class="footer__nav__point"><a href="#" class="nav-link">Реки</a></li>
-                <li class="footer__nav__point"><a href="#" class="nav-link">Новости</a></li>
-                <li class="footer__nav__point"><a href="#" class="nav-link">О нас</a></li>
-                <li class="footer__nav__point"><a href="#" class="nav-link">Поддержать нас</a></li>
+                <li class="footer__nav__point"><a href="rivers.html" class="nav-link">Реки</a></li>
+                <li class="footer__nav__point"><a href="news.html" class="nav-link">Новости</a></li>
+                <li class="footer__nav__point"><a href="aboutUs.html" class="nav-link">О нас</a></li>
+                <li class="footer__nav__point"><a href="donate.html" class="nav-link">Поддержать нас</a></li>
             </nav>
         </div>
         

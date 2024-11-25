@@ -1,0 +1,540 @@
+@import url(style.css);
+
+.hero-section 
+{
+    z-index: 1;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.4)), url(../img/volga_060.jpg) 0 0 no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+.hero-section__content
+{
+    z-index: 1;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section__content__h
+{
+    text-align: center;
+    font-size: 72px;
+    background-image: linear-gradient(90deg, #CCE8FF, #FFFFFF, #CCE8FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.hero-section__content__p
+{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'stolzl_medium';
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.our-vision
+{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.our-vision__img
+{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.our-vision__context
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.our-vision__context__h
+{
+    color: #33363F;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.our-vision__context__p
+{
+    font-family: 'stolzl_regular';
+    color: #33363F;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.our-vision__context__p:last-child
+{
+    margin-bottom: 0;
+}
+
+.whoarewe
+{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.whoarewe__context
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.whoarewe__context__h
+{
+    color: #33363F;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.whoarewe__context__p
+{
+    font-family: 'stolzl_regular';
+    color: #33363F;
+    font-size: 18px;
+}
+
+.whoarewe__links
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.whoarewe__links__link
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 256px;
+    height: 256px;
+    background-color: #33363F;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.whoarewe__links__link__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    opacity: 50%;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.whoarewe__links__link:hover .whoarewe__links__link__bg 
+{
+    transform: scale(1.1);
+}
+
+.whoarewe__links__link:hover
+{
+    background-color: #64b9ff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.whoarewe__links__link__h
+{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-family: 'stolzl_bold';
+    font-size: 24px;
+    color: #ffffff;
+    width: 244px;
+    transition: color 0.3s ease;
+}
+
+.joinUs-form
+{
+    background-color: #33363F;
+}
+
+.joinUs-form__content 
+{
+    display: flex;
+    gap: 40px;
+    border-radius: 20px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.joinUs-form__content__description 
+{
+    flex: 1;
+    margin: 40px;
+}
+
+.joinUs-form__content__description h2 
+{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.joinUs-form__content__description p 
+{
+    font-family: 'stolzl_regular';
+    font-size: 18px;
+    color: #cccccc;
+    line-height: 1.5;
+}
+
+.joinUs-form__content__form 
+{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 20px;
+    background-color: #414550;
+    padding: 20px;
+}
+
+.joinUs-form__content__form label 
+{
+    font-family: 'stolzl_medium';
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.joinUs-form__content__form input 
+{
+    width: calc(100% - 30px);
+    margin: 5px 0 15px 0;
+    padding: 10px;
+    border: 2px solid #4b5c74;
+    border-radius: 10px;
+    background-color: #414550;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'stolzl_regular';
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.joinUs-form__content__form input:focus 
+{
+    outline: none;
+    border-color: #089cff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #4f5361;
+}
+
+.joinUs-form__content__form button 
+{
+    display: block;
+    margin: auto;
+}
+
+.joinUs-form__content__form button:hover 
+{
+    background-color: #0056b3;
+}
+
+.joinUs-form__content__form__text-area
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.joinUs-form__content__form__text-area textarea 
+{
+    width: calc(100% - 30px);
+    height: 150px;
+    margin: 5px 0 15px 0;
+    padding: 10px;
+    border: 2px solid #4b5c74;
+    border-radius: 10px;
+    background-color: #414550;
+    font-size: 18px;
+    color: #fff;
+    resize: none;
+    font-family: 'stolzl_regular';
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.joinUs-form__content__form__text-area textarea:focus 
+{
+    outline: none;
+    border-color: #089cff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #4f5361;
+}
+
+.last-news
+{
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last-news__h
+{
+    font-size: 48px;
+    color: #33363F;
+    margin-bottom: 30px;
+}
+
+.last-news__cards
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.last-news__cards__card
+{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0,0,0, 0.3);
+    border-radius: 30px;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:baseline;
+    margin-bottom: 30px;
+}
+
+.last-news__cards__card 
+{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: baseline;
+    margin-bottom: 30px;
+    overflow: hidden; 
+    position: relative;
+}
+
+.last-news__cards__card__context 
+{
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: baseline;
+    gap: 20px;
+    position: relative;
+    transition: transform 0.3s ease; 
+}
+
+.last-news__cards__card__context > h4 
+{
+    font-family: 'stolzl_bold';
+    font-size: 26px;
+    color: #FFFFFF;
+    transform: translateY(0); 
+    transition: transform 0.3s ease; 
+}
+
+.last-news__cards__card__context > .primary-btn 
+{
+    opacity: 0; 
+    transform: translateY(30px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.last-news__cards__card:hover .last-news__cards__card__context 
+{
+    transform: translateY(-40px);
+}
+
+.last-news__cards__card:hover .last-news__cards__card__context > h4 
+{
+    transform: translateY(-20px);
+}
+
+.last-news__cards__card:hover .last-news__cards__card__context > .primary-btn 
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#first-new
+{
+    background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/moscow-river.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+#second-new
+{
+    background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/дон.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+#third-new
+{
+    background: linear-gradient(rgba(0,0,0,0), #33363F), url(../img/oka.png) 0 0 no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.subscription {
+    display: flex;
+    gap: 40px;
+    border-radius: 20px;
+    margin: 120px auto 120px auto;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.subscription__description {
+    flex: 1;
+    margin: 40px;
+}
+
+.subscription__description h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #33363F;
+}
+
+.subscription__description p {
+    font-family: 'stolzl_regular';
+    font-size: 18px;
+    color: #494d5a;
+    line-height: 1.5;
+}
+
+.subscription__form {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 20px;
+    background-color: #33363F;
+    padding: 20px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.subscription__form label {
+    font-family: 'stolzl_medium';
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.subscription__form input {
+    width: calc(100% - 30px);
+    margin: 5px 0 15px 0;
+    padding: 10px;
+    border: 2px solid #4b5c74;
+    border-radius: 10px;
+    background-color: #33363F;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'stolzl_regular';
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.subscription__form input:focus {
+    outline: none;
+    border-color: #089cff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #3f424d;
+}
+
+.subscription__form button {
+    display: block;
+    margin: auto;
+}
+
+.subscription__form button:hover {
+    background-color: #0056b3;
+}
+
+.contacts
+{
+    background-color: #33363F;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.contacts__context__h
+{
+    color: #ffffff;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.contacts__context__p
+{
+    font-family: 'stolzl_regular';
+    color: #cccccc;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contacts__context__h2
+{
+    font-family: 'stolzl_bold';
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contacts__context__ul
+{
+    font-family: 'stolzl_regular';
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.contacts__context__ul > li
+{
+    list-style: none;
+    margin-bottom: 2px;
+}
+
+.contacts__map > iframe
+{
+    border-radius: 30px;
+}
+
+
