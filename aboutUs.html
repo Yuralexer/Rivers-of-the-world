@@ -21,14 +21,15 @@
         <a/>
 
         <nav class="header__nav">
+            <div class="header__nav__hmenu" onclick="hMenu()">☰</div>
             <ul class="header__nav__main">
                 <li class="header__nav__main__point"><a href="index.html" class="nav-link">Главная</a></li>
                 <li class="header__nav__main__point"><a href="rivers.html" class="nav-link">Реки</a></li>
                 <li class="header__nav__main__point"><a href="news.html" class="nav-link">Новости</a></li>
                 <li class="header__nav__main__point"><a href="#" class="nav-link">О нас</a></li>
+                <li><button class="header__nav__primary-button primary-btn">Поддержать нас</button></li>
             </ul>
 
-            <button class="header__nav__primary-button primary-btn">Поддержать нас</button>
         </nav>
     </header>
 
@@ -75,7 +76,7 @@
             </div>
         </section>
 
-        <section class="joinUs-form">
+        <section class="joinUs-form content">
             <div class="joinUs-form__content">
                 <div class="joinUs-form__content__description">
                     <h2 class="primary-text">Станьте частью нашей команды!</h2>
@@ -127,7 +128,7 @@
             <button class="primary-btn">Смотреть все новости</button>
         </section>
 
-        <section class="subscription">
+        <section class="subscription content">
             <div class="subscription__description">
                 <h2 class="primary-text">Будьте в курсе новостей о наших реках!</h2>
                 <p>Подпишитесь на нашу рассылку и узнавайте первыми о новых проектах, акциях и актуальной информации об охране рек мира.</p>
@@ -184,5 +185,11 @@
 
     </footer>
 
+
+    <script>
+        function hMenu() {
+            document.querySelector('.header__nav__main').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
