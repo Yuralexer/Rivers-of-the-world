@@ -184,6 +184,8 @@
 
 .donation-why__ul__li
 {
+    min-width: 190px;
+    max-width: 200px;
     display: flex;
     align-items: center;
     list-style: none;
@@ -218,4 +220,100 @@
 .donation-why__img > img
 {
     height: 100%;
+}
+
+@media (max-width: 1440px)
+{
+    .donate-section
+    {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+    
+    .donate-section__context
+    {
+        flex: 1;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .donate-section__form {
+        width: 50%;
+        z-index: 1;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: #33363F;
+        padding: 20px;
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .donation-why
+    {
+        margin-top: 120px;
+        margin-bottom: 120px;
+        color: #33363f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    .donation-why__img
+    {
+        width: 100%;
+        max-height: 512px;
+        overflow: hidden;
+        border-radius: 30px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media (max-width: 960px)
+{
+    .donate-section__form {
+        width: 100%;
+        z-index: 1;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: #33363F;
+        padding: 20px;
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .donation-why__ul
+    {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .donation-why__h
+    {
+        font-size: 24px;
+    }
+
+    .donation-why__ul__li
+    {
+        max-width: 80%;
+        min-width: 10%;
+    }
 }
