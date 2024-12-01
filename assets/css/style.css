@@ -61,6 +61,13 @@ body {
     align-items: center;
 }
 
+.header__nav__hmenu {
+    color: #fff;
+    display: none;
+    font-size: 36px;
+    cursor: pointer;
+  }
+
 .header__nav__main
 {
     display: flex;
@@ -275,5 +282,142 @@ main
 
 .pofc > div
 {
-    width: 50%;
+    width: 45%;
+}
+
+
+
+@media (max-width: 1550px) {
+    .content {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .pofc
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pofc > div
+    {
+        width: 100%;
+    }
+
+    .header__nav__main {
+      display: none;
+      flex-direction: column;
+      gap: 30px;
+      background-color: #33363f;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      padding: 25px 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    }
+  
+    .header__nav__main.active {
+      display: flex;
+    }
+  
+    .header__nav__hmenu {
+      display: block;
+    }
+}
+
+@media (max-width: 950px)
+{
+
+    .footer
+    {
+        height: auto;
+        position: static;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #33363F;
+        padding: 20px 0;
+    }
+    
+    .footer__first-line
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .footer__second-line
+    {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'stolzl_book';
+        font-size: 14px;
+        text-align: right;
+        color: #fff;
+    }
+    
+    .footer__logo-img
+    {
+        height: 75px;
+    }
+    
+    .footer__nav
+    {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+        gap: 10px;
+    }
+    
+    .footer__nav__point:last-child
+    {
+        margin-right: 0;
+    }
+    
+    .footer__nav__point > a 
+    {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 850px)
+{
+    .content {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 600px)
+{
+
+    .primary-btn
+    {
+        font-size: 16px;
+        padding: 16px 42px;
+        border-radius: 10px;
+    }
+
+    .secondary-btn
+    {
+        font-size: 16px;
+        padding: 16px 42px;
+        border-radius: 10px;
+    }
+
 }
