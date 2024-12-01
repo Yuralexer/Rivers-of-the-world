@@ -920,8 +920,9 @@
 
     .whoarewe__links
     {
-        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        gap: 1;
     }
 
     .whoarewe__links__link
