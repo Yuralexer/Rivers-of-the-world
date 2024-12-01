@@ -40,8 +40,8 @@
                 <h1 class="hero-section__content__h primary-text">Мы объединяем людей ради защиты рек мира</h1>
                 <p class="hero-section__content__p">Наша миссия — сохранить реки планеты для будущих поколений. Мы боремся за чистую воду, поддерживаем экологические инициативы и развиваем сообщество единомышленников. Каждый ваш шаг вместе с нами делает мир лучше.</p>
                 <div class="hero-section__content__btn-group btn-group">
-                    <button class="primary-btn">Вступить в команду</button>
-                    <button class="secondary-btn">Контакты</button>
+                    <button class="hero-section__content__btn-group__joinUsBtn primary-btn">Вступить в команду</button>
+                    <button class="hero-section__content__btn-group__contactsBtn secondary-btn">Контакты</button>
                 </div>
             </div>
         </section>
@@ -76,7 +76,7 @@
             </div>
         </section>
 
-        <section class="joinUs-form content">
+        <section class="joinUs-form content" id="joinUs">
             <div class="joinUs-form__content">
                 <div class="joinUs-form__content__description">
                     <h2 class="primary-text">Станьте частью нашей команды!</h2>
@@ -104,28 +104,25 @@
             <h3 class="last-news__h primary-text">Последние новости</h3>
             <div class="last-news__cards">
                 <div class="last-news__cards__card" id="first-new">
-                    <div class="last-news__cards__card__date">
-                        04.11.2024
-                    </div>
                     <div class="last-news__cards__card__context">
                         <h4>Гендиректор «Рек мира» посетил Москву</h4>
-                        <button class="primary-btn">Читать новость</button>
+                        <button class="new-btn primary-btn">Читать новость</button>
                     </div>
                 </div>
                 <div class="last-news__cards__card" id="second-new">
                     <div class="last-news__cards__card__context">
                         <h4>Расширяемся на международный уровень!</h4>
-                        <button class="primary-btn">Читать новость</button>
+                        <button class="new-btn primary-btn">Читать новость</button>
                     </div>
                 </div>
                 <div class="last-news__cards__card" id="third-new">
                     <div class="last-news__cards__card__context">
                         <h4>Ещё 2 реки появились в списке «Рек мира»</h4>
-                        <button class="primary-btn">Читать новость</button>
+                        <button class="new-btn primary-btn">Читать новость</button>
                     </div>
                 </div>
             </div>
-            <button class="primary-btn">Смотреть все новости</button>
+            <button class="last-news__Btn primary-btn">Смотреть все новости</button>
         </section>
 
         <section class="subscription content">
@@ -146,7 +143,7 @@
             </div>
         </section>  
 
-        <section class="contacts content">
+        <section class="contacts content" id="contacts">
             <div class="contacts__context">
                 <h3 class="contacts__context__h primary-text">Свяжитесь с нами</h3>
                 <p class="contacts__context__p">Мы всегда рады общению! Свяжитесь с нами по любым вопросам или присоединяйтесь к нашим инициативам.</p>
@@ -190,6 +187,30 @@
         function hMenu() {
             document.querySelector('.header__nav__main').classList.toggle('active');
         }
+        document.querySelector('.header__nav__primary-button').addEventListener('click', function() {
+            window.location.href = 'donate.html';
+        });
+        document.querySelector('.hero-section__content__btn-group__joinUsBtn').addEventListener('click', function() {
+            document.getElementById('joinUs').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+        document.querySelector('.hero-section__content__btn-group__contactsBtn').addEventListener('click', function() {
+            document.getElementById('contacts').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+        const newBtns = document.getElementsByClassName('new-btn');
+        for (let i = 0; i < newBtns.length; i++) {
+            newBtns[i].addEventListener('click', () => {
+                window.location.href = 'new.html';
+            })
+        }
+        document.querySelector('.last-news__Btn').addEventListener('click', function() {
+            window.location.href = 'news.html';
+        });
     </script>
 </body>
 </html>
