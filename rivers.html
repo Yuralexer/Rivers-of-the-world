@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Список рек</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Реки</title>
+    <link rel="stylesheet" href="assets/css/style-rivers.css">
     <link rel="shortcut icon" href="assets/img/logo-lighttheme.svg" type="image/x-icon">
     <meta name="description" content=""Реки Мира" — это некоммерческая организация, объединившая единомышленников, которые горят желанием защитить и улучшить состояние рек по всему миру.">
     <meta name="keywords" content="river world река реки мир мира некоммерческая организация состояние защита">
@@ -18,23 +18,100 @@
                 <h1 class="header__logo__text__name">Реки мира</h1>
                 <h3 class="header__logo__text__subtitle">С заботой к воде</h3>
             </div>
-        <a/>
+        </a>
 
         <nav class="header__nav">
+            <div class="header__nav__hmenu" onclick="hMenu()">☰</div>
             <ul class="header__nav__main">
                 <li class="header__nav__main__point"><a href="index.html" class="nav-link">Главная</a></li>
                 <li class="header__nav__main__point"><a href="#" class="nav-link">Реки</a></li>
                 <li class="header__nav__main__point"><a href="news.html" class="nav-link">Новости</a></li>
                 <li class="header__nav__main__point"><a href="aboutUs.html" class="nav-link">О нас</a></li>
+                <li><button class="header__nav__primary-button primary-btn">Поддержать нас</button></li>
             </ul>
 
-            <button class="header__nav__primary-button primary-btn">Поддержать нас</button>
         </nav>
+        
     </header>
 
-    <main class="content">
+    <main>
         
-        <!-- Блок для содержимого страницы -->
+        <section class="hero-section content">
+
+            <div class="hero-section__context">
+                <div class="hero-section__context__h">Реки</div>
+            </div>
+
+        </section>
+
+        <section class="grid-of-rivers content">
+            <div class="grid-of-rivers__card" id="volga-river">
+                <div class="grid-of-rivers__card__background" id="volga-bg"></div>
+                <div class="grid-of-rivers__card__context">
+                    <h4>Волга</h4>
+                    <ul class="grid-of-rivers__card__context__info">
+                        <li>Длина: 3530 км</li>
+                        <li>Расположение: Европейская часть России</li>
+                        <li>Впадает в Каспийское море</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-of-rivers__card" id="moscow-river">
+                <div class="grid-of-rivers__card__background" id="moscow-bg"></div>
+                <div class="grid-of-rivers__card__context">
+                    <h4>Москва-река</h4>
+                    <ul class="grid-of-rivers__card__context__info">
+                        <li>Длина: 502 км</li>
+                        <li>Расположение: Москва и Московская область</li>
+                        <li>Впадает в реку Оку</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-of-rivers__card" id="ob-river">
+                <div class="grid-of-rivers__card__background" id="ob-bg"></div>
+                <div class="grid-of-rivers__card__context">
+                    <h4>Обь</h4>
+                    <ul class="grid-of-rivers__card__context__info">
+                        <li>Длина: 5410 км</li>
+                        <li>Расположение: Западная Сибирь</li>
+                        <li>Впадает в Обскую губу</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-of-rivers__card" id="lena-river">
+                <div class="grid-of-rivers__card__background" id="lena-bg"></div>
+                <div class="grid-of-rivers__card__context">
+                    <h4>Лена</h4>
+                    <ul class="grid-of-rivers__card__context__info">
+                        <li>Длина: 4400 км</li>
+                        <li>Расположение: Восточная Сибирь</li>
+                        <li>Впадает в море Лаптевых</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-of-rivers__card" id="amur-river">
+                <div class="grid-of-rivers__card__background" id="amur-bg"></div>
+                <div class="grid-of-rivers__card__context">
+                    <h4>Амур</h4>
+                    <ul class="grid-of-rivers__card__context__info">
+                        <li>Длина: 2824 км</li>
+                        <li>Расположение: Дальний Восток России и Китай</li>
+                        <li>Впадает в Охотское море</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-of-rivers__card" id="neva-river">
+                <div class="grid-of-rivers__card__background" id="neva-bg"></div>
+                <div class="grid-of-rivers__card__context">
+                    <h4>Нева</h4>
+                    <ul class="grid-of-rivers__card__context__info">
+                        <li>Длина: 74 км</li>
+                        <li>Расположение: Санкт-Петербург</li>
+                        <li>Впадает в Финский залив</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
     </main>
 
