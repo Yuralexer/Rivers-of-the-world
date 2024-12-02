@@ -106,15 +106,15 @@
     </footer>
 
     <script>
+        function hMenu() {
+            document.querySelector('.header__nav__main').classList.toggle('active');
+        }
         const newBtns = document.getElementsByClassName('new-btn');
         for (let i = 0; i < newBtns.length; i++) {
             newBtns[i].addEventListener('click', () => {
                 window.location.href = 'new.html';
             })
         }
-        document.querySelector('.last-news__Btn').addEventListener('click', function() {
-            window.location.href = 'news.html';
-        });
     </script>
 
 </body>

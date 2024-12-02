@@ -111,6 +111,9 @@
     </footer>
 
     <script>
+        function hMenu() {
+            document.querySelector('.header__nav__main').classList.toggle('active');
+        }
         const newBtns = document.getElementsByClassName('new-btn');
         for (let i = 0; i < newBtns.length; i++) {
             newBtns[i].addEventListener('click', () => {
