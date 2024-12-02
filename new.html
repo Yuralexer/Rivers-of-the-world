@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-new.css">
     <link rel="shortcut icon" href="assets/img/logo-lighttheme.svg" type="image/x-icon">
     <meta name="description" content=""Реки Мира" — это некоммерческая организация, объединившая единомышленников, которые горят желанием защитить и улучшить состояние рек по всему миру.">
     <meta name="keywords" content="river world река реки мир мира некоммерческая организация состояние защита">
@@ -32,9 +32,59 @@
         </nav>
     </header>
 
-    <main class="content">
+    <main>
         
-        <!-- Блок для содержимого страницы -->
+        <section class="hero-section content">
+
+            <div class="hero-section__context">
+                <div class="hero-section__context__date">02.12.2024</div>
+                <div class="hero-section__context__h">Гендиректор «Рек мира» посетил Москву</div>
+            </div>
+
+        </section>
+
+        <section class="new-content content">
+            <p class="new-content__p">
+                Генеральный директор компании «Реки мира» Иван Петров с рабочим визитом посетил столицу России. В ходе поездки он провёл серию встреч с представителями федеральных ведомств и ключевыми партнёрами компании. Основной темой обсуждений стало развитие внутренних водных путей, а также вопросы повышения экологической безопасности на реках России.
+            </p>
+            <p class="new-content__p">
+                В рамках визита Иван Петров принял участие в круглом столе, организованном Министерством транспорта РФ. На встрече обсуждались перспективы модернизации инфраструктуры и внедрения инновационных технологий в сферу речного судоходства. Гендиректор «Рек мира» поделился опытом компании в реализации крупных инфраструктурных проектов, включая строительство экологически чистых портов и развитие системы мониторинга состояния водных путей.
+            </p>
+            <p class="new-content__p">
+                Особое внимание было уделено вопросам экологии. Иван Петров отметил, что компания активно работает над снижением углеродного следа и улучшением качества воды в реках. Одним из ключевых проектов в этом направлении является разработка системы очистки стоков, которая уже внедряется на нескольких участках крупнейших рек страны.
+            </p>
+            <p class="new-content__p">
+                Кроме того, во время визита Иван Петров провёл переговоры с представителями бизнеса, включая крупнейших игроков в области логистики и грузоперевозок. Стороны обсудили возможности расширения сотрудничества и совместного участия в государственных программах по развитию водного транспорта. По словам Петрова, такие партнёрства помогут ускорить модернизацию отрасли и сделать её более конкурентоспособной.
+            </p>
+            <p class="new-content__p">
+                По итогам визита было подписано несколько соглашений о сотрудничестве, которые нацелены на повышение эффективности речного транспорта и улучшение экологической ситуации в регионах. Иван Петров подчеркнул, что «Реки мира» продолжат активно развивать свою деятельность, укрепляя позиции на российском рынке и внося вклад в устойчивое развитие отрасли.
+            </p>
+        </section>
+
+        <section class="last-news content">
+            <h3 class="last-news__h primary-text">Последние новости</h3>
+            <div class="last-news__cards">
+                <div class="last-news__cards__card" id="first-new">
+                    <div class="last-news__cards__card__context">
+                        <h4>Гендиректор «Рек мира» посетил Москву</h4>
+                        <button class="new-btn primary-btn">Читать новость</button>
+                    </div>
+                </div>
+                <div class="last-news__cards__card" id="second-new">
+                    <div class="last-news__cards__card__context">
+                        <h4>Расширяемся на международный уровень!</h4>
+                        <button class="new-btn primary-btn">Читать новость</button>
+                    </div>
+                </div>
+                <div class="last-news__cards__card" id="third-new">
+                    <div class="last-news__cards__card__context">
+                        <h4>Ещё 2 реки появились в списке «Рек мира»</h4>
+                        <button class="new-btn primary-btn">Читать новость</button>
+                    </div>
+                </div>
+            </div>
+            <button class="last-news__Btn primary-btn">Смотреть все новости</button>
+        </section>
 
     </main>
 
@@ -57,6 +107,18 @@
         </div>
 
     </footer>
+
+    <script>
+        const newBtns = document.getElementsByClassName('new-btn');
+        for (let i = 0; i < newBtns.length; i++) {
+            newBtns[i].addEventListener('click', () => {
+                window.location.href = 'new.html';
+            })
+        }
+        document.querySelector('.last-news__Btn').addEventListener('click', function() {
+            window.location.href = 'news.html';
+        });
+    </script>
 
 </body>
 </html>
