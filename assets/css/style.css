@@ -305,32 +305,34 @@ main
     {
         width: 100%;
     }
+}
 
+@media (max-width: 1200px)
+{
     .header__nav__main {
-      display: none;
-      flex-direction: column;
-      gap: 30px;
-      background-color: #33363f;
-      position: absolute;
-      top: 60px;
-      right: 20px;
-      padding: 25px 25px;
-      border-radius: 20px;
-      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-    }
-  
+        display: none;
+        flex-direction: column;
+        gap: 30px;
+        background-color: #33363f;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 25px 25px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+      }
+    
     .header__nav__main.active {
-      display: flex;
+        display: flex;
     }
-  
+
     .header__nav__hmenu {
-      display: block;
+        display: block;
     }
 }
 
 @media (max-width: 950px)
 {
-
     .footer
     {
         height: auto;
