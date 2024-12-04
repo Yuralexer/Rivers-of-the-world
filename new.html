@@ -114,6 +114,9 @@
         function hMenu() {
             document.querySelector('.header__nav__main').classList.toggle('active');
         }
+        document.querySelector('.header__nav__primary-button').addEventListener('click', function() {
+            window.location.href = 'donate.html';
+        });
         const newBtns = document.getElementsByClassName('new-btn');
         for (let i = 0; i < newBtns.length; i++) {
             newBtns[i].addEventListener('click', () => {
