@@ -119,6 +119,12 @@
         function hMenu() {
             document.querySelector('.header__nav__main').classList.toggle('active');
         }
+        
+        const donationAmount = document.getElementById('donation-amount');
+        donationAmount.addEventListener('input', (el) => {
+            if (el.target.value[0] == '-') el.target.value = Math.abs(parseInt(el.target.value));
+        });
+
         document.querySelector('.header__nav__primary-button').addEventListener('click', function() {
             window.location.href = 'donate.html';
         });
